@@ -52,6 +52,6 @@ if(!class_exists('PluginPress'))
 {
     // @string - required - absolute path to the primary plugin file (this file).
     // @string - required - absolute path to the plugin options(configurations) file.
-    $test_plugin = new PluginPress(__FILE__, plugin_dir_path(__FILE__) . 'Configs/PluginOptions.php');
-    $test_plugin->init();
+    $plugin_press = new PluginPress(plugin_file_path: __FILE__, config_file_path: plugin_dir_path(__FILE__) . 'Configs/PluginConfigs.php');
+    $plugin_press->init();
 }

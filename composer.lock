@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c69091239ecadc97848094d6a0642bd5",
+    "content-hash": "e2d956f230755e248e495173dab6bd9c",
     "packages": [
         {
             "name": "pluginpress/pluginpressapi",
@@ -12,19 +12,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PluginPress/PluginPressAPI.git",
-                "reference": "ffbfd8380a738a450ae1077ebbadfa387fa11ae8"
+                "reference": "b5153769fa3a8291ad00c70c82256c5538d544f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PluginPress/PluginPressAPI/zipball/ffbfd8380a738a450ae1077ebbadfa387fa11ae8",
-                "reference": "ffbfd8380a738a450ae1077ebbadfa387fa11ae8",
+                "url": "https://api.github.com/repos/PluginPress/PluginPressAPI/zipball/b5153769fa3a8291ad00c70c82256c5538d544f7",
+                "reference": "b5153769fa3a8291ad00c70c82256c5538d544f7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=8.0.0"
             },
             "conflict": {
-                "php": "<7.0.0"
+                "php": "<8.0.0"
             },
             "type": "library",
             "autoload": {
@@ -34,7 +34,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -44,8 +44,8 @@
                     "role": "Lead Developer"
                 }
             ],
-            "description": "API wrapper classes for building object-oriented WordPress plugins.",
-            "homepage": "https://pluginpress.github.io/PluginPressAPI/",
+            "description": "Wrapper classes and APIs for building object-oriented WordPress plugins.",
+            "homepage": "https://pluginpress.github.io",
             "keywords": [
                 "Skeleton",
                 "api",
@@ -71,7 +71,7 @@
                     "type": "Sponsors"
                 }
             ],
-            "time": "2021-07-27T00:00:00+00:00"
+            "time": "2022-10-15T00:00:00+00:00"
         }
     ],
     "packages-dev": [],
@@ -83,6 +83,8 @@
     "platform": {
         "php": ">=8.0.0"
     },
-    "platform-dev": [],
+    "platform-dev": {
+        "php": ">=8.0.0"
+    },
     "plugin-api-version": "2.3.0"
 }

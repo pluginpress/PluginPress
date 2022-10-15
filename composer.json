@@ -59,8 +59,10 @@
     },
     "require": {
       "php": ">=8.0.0",
-      "pluginpress/pluginpressapi": ">=1.0.0"
+      "pluginpress/pluginpressapi": "^1.0"
     },
     "require-dev": {
+      "php": ">=8.0.0",
+      "pluginpress/pluginpressapi": "^1.0"
     }
 }
