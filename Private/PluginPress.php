@@ -12,6 +12,7 @@ if(!defined('WPINC'))
 
 class PluginPress extends PluginPressAPI
 {
+
     public function __construct(
         protected string $plugin_file_path,
         protected string $config_file_path
@@ -21,6 +22,13 @@ class PluginPress extends PluginPressAPI
     }
     public function init()
     {
+
+
+        print('<pre>');
+        var_dump($this->plugin_options->get('plugin_name'));
+        print('</pre>');
+        // die;
+
         // triggers when the plugin is activated. If a plugin is silently activated (such as during an update), this hook does not fire.
         // add_action( 'activation_hook_' . $this->plugin_options->get( 'plugin_slug' ), [ $this, 'activation_hook'] );
         // triggers when the plugin is deactivated. If a plugin is silently deactivated (such as during an update), this hook does not fire.

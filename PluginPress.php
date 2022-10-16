@@ -33,6 +33,8 @@
  * Domain Path:             /Common/Languages
  * Update URI:              https://github.com/PluginPress/PluginPress/
  * Network:                 false
+ * License:                 GPL-3.0-or-later
+ * License URI:             https://github.com/PluginPress/PluginPress/blob/main/LICENSE
  *
  */
 
