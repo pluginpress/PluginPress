@@ -19,14 +19,18 @@ class PluginPress extends PluginPressAPI
     )
     {
         parent::__construct(plugin_file_path: $plugin_file_path, config_file_path: $config_file_path);
+        
     }
     public function init()
     {
+        $this->plugin_activator->set_activation_hook(activation_hook_class : new PluginActivationSequence($this->plugin_options));
+        $this->plugin_activator->set_deactivation_hook(deactivation_hook_class : new PluginDeactivationSequence($this->plugin_options));
 
 
-        print('<pre>');
-        var_dump($this->plugin_options->get('plugin_name'));
-        print('</pre>');
+
+        // print('<pre>');
+        // var_dump($this->plugin_activator);
+        // print('</pre>');
         // die;
 
         // triggers when the plugin is activated. If a plugin is silently activated (such as during an update), this hook does not fire.
@@ -44,14 +48,14 @@ class PluginPress extends PluginPressAPI
     }
 
     // triggers when the plugin is activated. If a plugin is silently activated (such as during an update), this hook does not fire.
-    public function activation_hook()
-    {
-        // ( new PluginActivationSequence( $this->plugin_options ) )->init();
-    }
+    // public function activation_hook()
+    // {
+    //     // ( new PluginActivationSequence( $this->plugin_options ) )->init();
+    // }
 
-    // triggers when the plugin is deactivated. If a plugin is silently deactivated (such as during an update), this hook does not fire.
-    public function deactivation_hook()
-    {
-        // ( new PluginDeactivationSequence( $this->plugin_options ) )->init();
-    }
+    // // triggers when the plugin is deactivated. If a plugin is silently deactivated (such as during an update), this hook does not fire.
+    // public function deactivation_hook()
+    // {
+    //     // ( new PluginDeactivationSequence( $this->plugin_options ) )->init();
+    // }
 }
