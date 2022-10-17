@@ -2,7 +2,6 @@
 
 namespace PluginPress\PluginPress;
 
-use DateTime;
 use PluginPress\PluginPressAPI\PluginOptions\PluginOptions;
 
 // If this file is called directly, abort. for the security purpose.

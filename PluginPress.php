@@ -7,7 +7,7 @@
  *
  * @category                PluginPress
  * @package                 PluginPress
- * @link                    https://pluginpress.github.io
+ * @link                    https://pluginpress.iamprogrammer.lk
  * @copyright               2022 I am Programmer
  * @license                 LICENSE <https://github.com/PluginPress/PluginPress/blob/main/LICENSE>
  * @version                 GIT:1.0.0
@@ -23,7 +23,7 @@
  * @wordpress-plugin
  * Plugin Name:             PluginPress
  * Description:             Skeleton framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress APIs.
- * Plugin URI:              https://pluginpress.github.io
+ * Plugin URI:              https://pluginpress.iamprogrammer.lk
  * Version:                 1.0.0
  * Requires at least:       6.0.0
  * Requires PHP:            8.0.0
