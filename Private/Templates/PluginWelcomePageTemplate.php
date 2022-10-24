@@ -21,6 +21,10 @@ echo 'Plugin Welcome Page Template</br>';
         // var_dump($current_page = $this->get_current_page());
         // print('</pre>');
 
+        global $wp_settings_sections;
+        global $wp_settings_fields;
+        // global $wp_settings_tabs;
+
         print('<pre>');
-        var_dump($this->get_registered_pages());
+        var_dump($wp_settings_sections);
         print('</pre>');
