@@ -169,7 +169,13 @@ class PluginPress extends PluginPressAPI
                 echo '</div>';
             }
         );
-
+        $this->dashboard_pages->add_tab(
+            tab_parent_page_slug  : 'menu_page_02',             // required - 
+            tab_slug              : 'tab_01',                   // required - 
+            tab_title             : 'Tab 01',                   // required - 
+            tab_description       : 'Tab 01 description',       // optional - 
+            // tab_default           : true,                       // optional - 
+        );
 
 // Add tab 01
         $this->dashboard_pages->add_tab(
@@ -498,17 +504,27 @@ class PluginPress extends PluginPressAPI
             page_position      : 10,
         );
 
-        $this->dashboard_pages->add_submenu_page(
-            page_parent_slug   : 'menu_page_01',
-            page_slug          : 'sub_menu_page_02',
-            page_title         : 'Sub Menu Page 02',
-            // page_ui            : '',
+        $this->dashboard_pages->add_menu_page(
+            page_slug          : 'All Registered Pages',
+            page_title         : 'All Registered Pages',
+            page_ui            : function(){
+                print('<pre>');
+                var_dump($this->dashboard_pages->get_registered_pages()[0]);
+                print('</pre>');
+            },
             // page_menu_title    : '',
             // page_description   : '',
             // page_capabilities  : '',
             page_position      : 11,
         );
 
+        $this->dashboard_pages->add_admin_enqueue_scripts(
+            enqueue_script_slug : 'dashboard_ui_2',
+            enqueue_script_path : $this->plugin_options->get('plugin_dir_url') . 'vendor/pluginpress/pluginpressapi/Public/Assets/StyleSheets/DashboardUI2.css',
+            enqueue_script_type : 'style',
+            page_slug : '' ,
+            enqueue_location : 'top',
+        );
 
 
         // print('<pre>');

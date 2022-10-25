@@ -23,8 +23,8 @@ echo 'Plugin Welcome Page Template</br>';
 
         global $wp_settings_sections;
         global $wp_settings_fields;
-        // global $wp_settings_tabs;
+        global $wp_settings_tabs;
 
-        print('<pre>');
-        var_dump($wp_settings_sections);
-        print('</pre>');
+        // print('<pre>');
+        // var_dump($wp_settings_tabs);
+        // print('</pre>');
